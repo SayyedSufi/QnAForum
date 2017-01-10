@@ -1,10 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_user_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="asia.bilalujede.qnaforum.UserRegistration">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"/>
+    <EditText
+        android:id="@+id/edtxtfname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"/>
+    <EditText
+        android:id="@+id/edtxtlname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/mailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="e Mail ID"/>
+    <EditText
+        android:id="@+id/edtxtmailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/mobnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"/>
+    <EditText
+        android:id="@+id/edtxtmobnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+        <Button
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Clear"
+            android:id="@+id/clear"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#D50000"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="26dp"
+            android:layout_height="23dp"
+            android:src="@drawable/ic_add_black_24dp"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Sign in with Google"
+            android:textSize="25dp"
+            android:textColor="#FFF"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#0D47A1"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:src="@drawable/facebook"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Sign in with Facebook"
+            android:textSize="25dp"
+            android:textColor="#FFF"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</LinearLayout>
